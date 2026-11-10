@@ -1,0 +1,59 @@
+.one {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+}
+
+.two {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.one:hover {
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        background-color: red;
+    }
+
+    50% {
+        left: 200px;
+        background-color: blue;
+    }
+
+    100% {
+        left: 400px;
+        background-color: green;
+    }
+}
+
+.inline-img img {
+    transition: transform 0.5s ease;
+}
+
+.inline-img img:hover {
+    transform: scale(1.2);
+}
